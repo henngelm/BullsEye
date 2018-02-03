@@ -302,6 +302,7 @@
 				F1A3C91B2024AB08004E8912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
