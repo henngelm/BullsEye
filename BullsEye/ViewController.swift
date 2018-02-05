@@ -30,9 +30,12 @@ class ViewController: UIViewController {
         
         // calculate the difference between the random number and the slider's value.
         let difference = abs(targetValue - currentValue)
+        // calculate the points reached in each round
+        let points = 100 - difference
         
-        let message = "The value of the slider is: \(currentValue)" +
-                      "\nThe target value is: \(targetValue)" + "\nThe difference is: \(difference)"
+        let message = "You scored \(points) points"
+//        let message = "The value of the slider is: \(currentValue)" +
+//                      "\nThe target value is: \(targetValue)" + "\nThe difference is: \(difference)"
         let alert = UIAlertController(title: "Hello, World",
                                       message: message,
                                       preferredStyle: .alert)
