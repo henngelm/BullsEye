@@ -27,8 +27,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert() {
+        
+        // calculate the difference between the random number and the slider's value.
+        let difference = abs(targetValue - currentValue)
+        
         let message = "The value of the slider is: \(currentValue)" +
-                      "\nThe target value is: \(targetValue)"
+                      "\nThe target value is: \(targetValue)" + "\nThe difference is: \(difference)"
         let alert = UIAlertController(title: "Hello, World",
                                       message: message,
                                       preferredStyle: .alert)
