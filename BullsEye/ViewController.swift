@@ -35,14 +35,18 @@ class ViewController: UIViewController {
         // calculate the difference between the random number and the slider's value.
         let difference = abs(targetValue - currentValue)
         // calculate the points reached in each round
-        let points = 100 - difference
+        var points = 100 - difference
         // alert title
         let alertTitle: String
         // alert title message
         if difference == 0 {
             alertTitle = "Perfect!"
+            points += 100
         } else if difference <= 5 {
             alertTitle = "You almost had it!"
+            if difference == 1 {
+                points += 50
+            }
         } else if difference <= 10 {
             alertTitle = "Pretty good!"
         } else {
