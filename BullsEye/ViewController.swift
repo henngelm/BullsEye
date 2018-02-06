@@ -31,7 +31,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert() {
-        
         // calculate the difference between the random number and the slider's value.
         let difference = abs(targetValue - currentValue)
         // calculate the points reached in each round
@@ -66,11 +65,13 @@ class ViewController: UIViewController {
                                       preferredStyle: .alert)
         let action = UIAlertAction(title: "OK",
                                    style: .default,
-                                   handler: nil)
+                                   handler: {
+                                    action in self.startNewRound()
+        })
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        startNewRound()
+//        startNewRound()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
@@ -91,5 +92,10 @@ class ViewController: UIViewController {
         roundLabel.text = String(round)
     }
     
+//    @IBAction func startOver(_ sender: UIButton) {
+//        score *= 0
+//        round *= 0
+//        updateLabels()
+//    }
 }
 
