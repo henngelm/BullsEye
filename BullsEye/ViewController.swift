@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         // calculate the points reached in each round
         let points = 100 - difference
         // alert title
-        var alertTitle: String
+        let alertTitle: String
         // alert title message
         if difference == 0 {
             alertTitle = "Perfect!"
