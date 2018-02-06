@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         // calculate the points reached in each round
         let points = 100 - difference
         // alert title
-        var alertTitle = ""
+        var alertTitle: String
         // alert title message
         if difference == 0 {
             alertTitle = "Perfect!"
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         let message = "You scored \(points) points"
 //        let message = "The value of the slider is: \(currentValue)" +
 //                      "\nThe target value is: \(targetValue)" + "\nThe difference is: \(difference)"
-        let alert = UIAlertController(title: "\(alertTitle)",
+        let alert = UIAlertController(title: alertTitle,
                                       message: message,
                                       preferredStyle: .alert)
         let action = UIAlertAction(title: "OK",
