@@ -44,9 +44,9 @@ class ViewController: UIViewController {
         } else if difference <= 5 {
             alertTitle = "You almost had it!"
         } else if difference <= 10 {
-            alertTitle = "Not even close!"
+            alertTitle = "Pretty good!"
         } else {
-            alertTitle = "Too far away!"
+            alertTitle = "Not even close!"
         }
         print(difference)
         // update the total score
