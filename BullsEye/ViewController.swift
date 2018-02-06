@@ -41,9 +41,11 @@ class ViewController: UIViewController {
         // alert title message
         if difference == 0 {
             alertTitle = "Perfect!"
+            // bonus points
             points += 100
         } else if difference <= 5 {
             alertTitle = "You almost had it!"
+            // bonus points
             if difference == 1 {
                 points += 50
             }
